@@ -14,5 +14,6 @@ class Greeting(private val rocketRepository: RocketRepository) {
         delay(1.seconds)
         emit(daysPhrase())
         emit(rocketRepository.getDateOfLastSuccessfulLaunchPhrase())
+        emit("hoge")
     }
 }
